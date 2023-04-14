@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: aqua;
+            border: 1px rgb(0, 138, 138) solid;
+            margin: 10px 10px;
+            padding: 10px 0;
+        }
+
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+        .zaholovok{
+            float: left;
+        }
+
+        .menu{
+            float: right;
+        }
+
+        .text, footer{
+            text-align: center;
+            background-color: aqua;
+            border: 1px rgb(0, 138, 138) solid;
+            margin: 10px 10px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="zaholovok">Заголовк</div>
+        <div class="menu">Меню</div>
+    </header>
+    <div style="clear:both"></div>
+    <div class="text">Вміст сторінки</div>
+    <footer>Додаткова секція</footer>
+</body>
+</html>
